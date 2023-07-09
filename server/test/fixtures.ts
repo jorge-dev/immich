@@ -27,6 +27,8 @@ import {
   SystemConfigKey,
   TagEntity,
   TagType,
+  TranscodeHWAccel,
+  TranscodePolicy,
   UserEntity,
   UserTokenEntity,
 } from '@app/infra/entities';

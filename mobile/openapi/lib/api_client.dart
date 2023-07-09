@@ -215,6 +215,8 @@ class ApiClient {
           return AssetCountByTimeBucket.fromJson(value);
         case 'AssetCountByTimeBucketResponseDto':
           return AssetCountByTimeBucketResponseDto.fromJson(value);
+        case 'AssetCountByUserIdResponseDto':
+          return AssetCountByUserIdResponseDto.fromJson(value);
         case 'AssetFileUploadResponseDto':
           return AssetFileUploadResponseDto.fromJson(value);
         case 'AssetIdsDto':
@@ -223,8 +225,6 @@ class ApiClient {
           return AssetIdsResponseDto.fromJson(value);
         case 'AssetResponseDto':
           return AssetResponseDto.fromJson(value);
-        case 'AssetStatsResponseDto':
-          return AssetStatsResponseDto.fromJson(value);
         case 'AssetTypeEnum':
           return AssetTypeEnumTypeTransformer().decode(value);
         case 'AudioCodec':
@@ -379,6 +379,8 @@ class ApiClient {
           return ThumbnailFormatTypeTransformer().decode(value);
         case 'TimeGroupEnum':
           return TimeGroupEnumTypeTransformer().decode(value);
+        case 'TranscodeHWAccel':
+          return TranscodeHWAccelTypeTransformer().decode(value);
         case 'TranscodePolicy':
           return TranscodePolicyTypeTransformer().decode(value);
         case 'UpdateAlbumDto':
