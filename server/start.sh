@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export LD_PRELOAD=/usr/lib/$(arch)-linux-gnu/libmimalloc.so.2
+
 if [ "$DB_HOSTNAME_FILE" ]; then
 	export DB_HOSTNAME=$(cat $DB_HOSTNAME_FILE)
 	unset DB_HOSTNAME_FILE
